@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Slayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Dragon Slayer</h1>
+
+    <div class="options">
+        <div class="form">
+            <div class="form-group">
+                <label for="difficulty">Difficulté</label>
+                <select name="" id="difficulty" class="form-control">
+                    <option value="0">Facile</option>
+                    <option value="1">Moyen</option>
+                    <option value="2">Difficile</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="armor">Armures</label>
+                <select name="" id="armor" class="form-control">
+                    <option value="0">Cuivre</option>
+                    <option value="1">Fer</option>
+                    <option value="2">Magique</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="sword">Epées</label>
+                <select name="" id="sword" class="form-control">
+                    <option value="0">Bois</option>
+                    <option value="1">Fer</option>
+                    <option value="2">Epée sacrée Excalibur</option>
+                </select>
+            </div>
+        </div>
+
+        <button class="btn" id="btn_option">Valider</button>
+    </div>
+
+    <div class="notifications">
+        <div class="personnages">
+            <div id="chara_knight">
+                <h2>Luk Skriptwalker</h2>
+                <p><span id="pv_knight">0</span> PV</p>
+                <p id="armor_knight"></p>
+                <p id="sword_knight"></p>
+            </div>
+            <div id="chara_dragon">
+                <h2>Javawan the Bug</h2>
+                <p><span id="pv_dragon">0</span> PV</p>
+            </div>
+        </div>
+    </div>
+
+    <button id="btn_start">Combat</button>
+    <div id="battle_screen" class="battle_screen"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
